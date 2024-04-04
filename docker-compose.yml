@@ -1,0 +1,20 @@
+services:
+  database:
+    image: postgres
+    environment:
+      POSTGRES_DB: "games"
+      POSTGRES_USER: "pguser"
+      POSTGRES_PASSWORD: "pguser123"
+      PGDATA: "/var/lib/postgresql-static/data/games"
+    volumes:
+      - pg-db-1:/var/lib/postgresql-static/data/games
+    ports:
+      - "5432:5432"
+    networks:
+      - base
+volumes:
+  pg-db-1:
+
+networks:
+  base:
+    driver: bridge
