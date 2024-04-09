@@ -1,0 +1,6 @@
+DROP TABLE  game CASCADE;
+DROP TABLE  person CASCADE;
+DROP TABLE  vendor CASCADE;
+DROP TABLE  game_ownership CASCADE;
+DROP TABLE  vendor_offerings CASCADE;
+DROP TABLE  time_spaces CASCADE;
