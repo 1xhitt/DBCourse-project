@@ -23,7 +23,6 @@ CREATE TABLE game_ownership (
 	PRIMARY KEY (game_id, person_id),
 	FOREIGN KEY (game_id) REFERENCES game(id),
 	FOREIGN KEY (person_id) REFERENCES person(id)
-
 );
 
 CREATE TABLE vendor_offerings (
